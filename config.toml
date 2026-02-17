@@ -1,0 +1,25 @@
+[Server]
+host = "localhost"
+port = 5022
+
+[Application]
+environment = "Development"
+
+[Logging]
+log_to_stdout = true
+log_level = "info"
+
+[DotCache]
+expose_control_api = true
+allowed_control_ips = ["::1", "localhost", "127.0.0.1"]
+control_api_path = "control"
+
+expose_health_api = true
+allowed_health_ips = ["::1", "localhost", "127.0.0.1"]
+health_api_path = "health"
+
+api_base = "__dotcache"
+
+[Downstream]
+host = "localhost"
+port = 3000
