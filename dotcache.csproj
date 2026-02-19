@@ -14,9 +14,9 @@
   <ItemGroup>
     <Folder Include="Src\API\Endpoints\" />
     <Folder Include="Src\Control\" />
-    <Folder Include="Src\Core\" />
     <Folder Include="Docs\" />
-    <Folder Include="Src\Infrastructure\Http\" />
+    <Folder Include="Src\Core\Eviction\" />
+    <Folder Include="Src\Core\Cache\" />
     <Folder Include="Src\Infrastructure\Logging\" />
     <Folder Include="Src\Infrastructure\Observability\" />
   </ItemGroup>

@@ -48,7 +48,7 @@ namespace DotCache.Infrastructure.Configuration
             lock (_lock)
             {
                 string configContent = File.ReadAllText(_configFilePath);
-                if(!TestConfigFile(configContent))
+                if (!TestConfigFile(configContent))
                 {
                     throw new Exception("Invalid Config File");
                 }

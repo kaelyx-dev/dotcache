@@ -12,6 +12,15 @@ builder.Services.AddSingleton<ConfigManager>(configManager);
 
 WebApplication app = builder.Build();
 
+if (configManager.Get(ConfigTable.Dotcache, "expose_control_api", false))
+{
+    string controlPath = configManager.Get(ConfigTable.Dotcache, "control_api_path", "__cache")!;
+    app.Map(controlPath, _app =>
+    {
+
+    });
+}
+
 MiddlewareManager.RegisterMiddleware(app);
 
 app.MapGet("/health", () => "OK");
