@@ -1,4 +1,4 @@
-﻿using dotcache.Src.API.Middleware;
+﻿using DotCache.API.Middleware;
 
 namespace DotCache.API.Middleware
 {

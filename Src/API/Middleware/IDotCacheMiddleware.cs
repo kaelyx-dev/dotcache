@@ -1,4 +1,4 @@
-﻿namespace dotcache.Src.API.Middleware
+﻿namespace DotCache.API.Middleware
 {
     public interface IDotCacheMiddleware: IMiddleware
     {

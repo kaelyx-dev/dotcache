@@ -1,4 +1,4 @@
-﻿namespace dotcache.Src.Infrastructure.Http
+﻿namespace DotCache.Infrastructure.Http
 {
     public class HttpUtilities
     {
